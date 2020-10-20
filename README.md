@@ -1,2 +1,2 @@
-# react-native-training-base
+# React Native Training Base
 Base repository for React Native training
