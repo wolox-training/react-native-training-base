@@ -7,10 +7,12 @@
     "android:build": "cd android/ && ./gradlew clean assembleRelease",
     "android:clean": "cd android/ && ./gradlew clean",
     "ios": "npx react-native run-ios",
+    "ios:clean": "cd ios/ && rm -rf build && rm -rf Pods",
     "start": "npx react-native start",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint-fix": "eslint . --fix --ext .js,.jsx,.ts,.tsx",
+    "lint-diff": "git diff --name-only --relative --diff-filter=ACM | grep -E \"\\.(ts|tsx|js|jsx)$\" | xargs eslint",
     "check-types": "tsc"
   },
   "dependencies": {
@@ -53,18 +55,11 @@
   },
   "jest": {
     "preset": "react-native",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ]
+    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn run lint && yarn run check-types"
+      "pre-commit": "yarn run lint-diff && yarn run check-types"
     }
   }
 }
