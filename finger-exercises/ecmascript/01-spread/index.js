@@ -5,6 +5,8 @@ export function min() {
   return Math.min();
 }
 
-export function copy() {
+export function copy() {}
 
-}
+export function reverseMerge() {}
+
+export function filterAttribs() {}
