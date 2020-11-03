@@ -4,7 +4,8 @@
   "description": "Ecmascript exercises for React Native Training",
   "main": "index.js",
   "scripts": {
-    "test": "jest ."
+    "test": "jest .",
+    "lint": "eslint ."
   },
   "author": "Wolox",
   "license": "MIT",
@@ -14,8 +15,9 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
     "eslint": "^4.19.1",
+    "husky": "^4.2.5",
     "jest": "^22.4.3",
-    "npm": "^6.14.6"
+    "npm": "^7.0.7"
   },
   "devDependencies": {
     "eslint-config-airbnb-base": "^12.1.0",
@@ -24,5 +26,10 @@
   "jest": {
     "verbose": true,
     "testURL": "http://localhost/"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run lint && yarn run test"
+    }
   }
 }
