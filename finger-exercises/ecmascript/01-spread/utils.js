@@ -3,7 +3,7 @@
 // Would you like to fix this issue ?
 
 export function isArray(aPossibleArray) {
-  return aPossibleArray.constructor === Array;
+  return aPossibleArray.constructor.name === 'Array';
 }
 
 // export default isArray;
