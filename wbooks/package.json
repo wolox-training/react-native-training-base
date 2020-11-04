@@ -59,7 +59,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn run lint-diff && yarn run check-types"
+      "pre-commit": "yarn run lint && yarn run check-types"
     }
   }
 }
