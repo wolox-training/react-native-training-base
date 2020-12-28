@@ -10,20 +10,27 @@
     "ios:clean": "cd ios/ && rm -rf build && rm -rf Pods",
     "start": "npx react-native start",
     "test": "jest",
+    "coverage": "jest --coverage",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint-fix": "eslint . --fix --ext .js,.jsx,.ts,.tsx",
     "lint-diff": "git diff --staged --name-only --relative --diff-filter=ACM | grep -E \"\\.(ts|tsx|js|jsx)$\" | xargs eslint",
     "check-types": "tsc"
   },
   "dependencies": {
+    "@testing-library/jest-native": "^3.4.3",
     "react": "16.13.1",
-    "react-native": "0.63.3"
+    "react-native": "0.63.3",
+    "react-native-gesture-handler": "^1.9.0",
+    "react-native-testing-library": "^6.0.0",
+    "redux-mock-store": "^1.5.4",
+    "ts-jest": "^26.4.4",
+    "ts-node": "^9.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/runtime": "^7.8.4",
     "@react-native-community/eslint-config": "^1.1.0",
-    "@types/jest": "^25.2.3",
+    "@types/jest": "^26.0.19",
     "@types/react-native": "^0.63.2",
     "@types/react-test-renderer": "^16.9.2",
     "@typescript-eslint/eslint-plugin": "^2.27.0",
@@ -46,7 +53,7 @@
     "eslint-plugin-react-hooks": "^4.0.0",
     "eslint-plugin-react-native": "^3.8.1",
     "husky": "^4.2.5",
-    "jest": "^25.1.0",
+    "jest": "^26.6.3",
     "metro-react-native-babel-preset": "^0.59.0",
     "prettier": "^2.0.5",
     "prettier-eslint": "^9.0.1",
@@ -55,7 +62,14 @@
   },
   "jest": {
     "preset": "react-native",
-    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   },
   "husky": {
     "hooks": {
