@@ -1,0 +1,25 @@
+name: Github Actions CI
+
+on: [pull_request]
+
+jobs:
+  CI:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: wbooks
+    steps:
+    - name: Check out Git repository
+      uses: actions/checkout@v2
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '12'
+    - name: Install dependencies
+      run: yarn
+    - name: Run Lint and Typescript check
+      run: |
+        yarn run lint
+        yarn run check-types
+    - name: Run tests
+      run: yarn run test
