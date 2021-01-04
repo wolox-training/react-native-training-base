@@ -1198,6 +1198,13 @@
     ramda "^0.26.1"
     redent "^2.0.0"
 
+"@testing-library/react-native@^7.1.0":
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/@testing-library/react-native/-/react-native-7.1.0.tgz#6b168aac21522c8a5175461b350336fd79612ac9"
+  integrity sha512-ljVM9KZqG7BT/NFN6CHzdF6MNmM28+k7MEybFJ7FW1wVrhpiY4+hU9ypZ+hboO+MG3KpE2aFBzP4od3gu+Zzdg==
+  dependencies:
+    pretty-format "^26.0.1"
+
 "@types/babel__core@^7.0.0", "@types/babel__core@^7.1.7":
   version "7.1.12"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.12.tgz#4d8e9e51eb265552a7e4f1ff2219ab6133bdfb2d"
@@ -6683,17 +6690,10 @@ react-native-gesture-handler@^1.9.0:
     invariant "^2.2.4"
     prop-types "^15.7.2"
 
-react-native-testing-library@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/react-native-testing-library/-/react-native-testing-library-6.0.0.tgz#b6e1c2213008dc62bdf28bb1474dfaca9cece058"
-  integrity sha512-BobXLtlef+gklN6cl6oC20/rnW9lWGj7Yxzzn+fTb+9go0LnGGgJ8DNaJtuW5oS7pOkm1Wq+u+cypALyf32FjA==
-  dependencies:
-    pretty-format "^26.0.1"
-
-react-native@0.63.3:
-  version "0.63.3"
-  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.63.3.tgz#4a7f6540e049ff41810887bbd1125abc4672f3bf"
-  integrity sha512-71wq13uNo5W8QVQnFlnzZ3AD+XgUBYGhpsxysQFW/hJ8GAt/J5o+Bvhy81FXichp6IBDJDh/JgfHH2gNji8dFA==
+react-native@0.63.4:
+  version "0.63.4"
+  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.63.4.tgz#2210fdd404c94a5fa6b423c6de86f8e48810ec36"
+  integrity sha512-I4kM8kYO2mWEYUFITMcpRulcy4/jd+j9T6PbIzR0FuMcz/xwd+JwHoLPa1HmCesvR1RDOw9o4D+OFLwuXXfmGw==
   dependencies:
     "@babel/runtime" "^7.0.0"
     "@react-native-community/cli" "^4.10.0"
