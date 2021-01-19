@@ -18,9 +18,9 @@
 
 #### iPhone SE (or similar)
 
-#### iPhone 8 (or similar)
+#### iPhone 6/7/8 (or similar)
 
-#### iPhone 11 (or similar)
+#### iPhone 11/12 Base/Pro/Pro Max (or similar)
 
 ## Trello Card
 
