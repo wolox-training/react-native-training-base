@@ -18,6 +18,10 @@ import {
   DebugInstructions,
   ReloadInstructions
 } from 'react-native/Libraries/NewAppScreen';
+import Reactotron from 'reactotron-react-native';
+
+// Prueba Reactotron
+Reactotron.log('Probando Reactotron');
 
 const App = () => {
   return (
