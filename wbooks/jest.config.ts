@@ -20,7 +20,7 @@ export default {
   transformIgnorePatterns: [
     '/node_modules/(?!native-base)/',
     '/node_modules/@react-native-async-storage/async-storage/(?!(lib))',
-    'node_modules/(?!(jest-)?react-native|react-native*|react-redux|loreact-clone-referenced-element|@react-native-community|expo(nent)?|@expo(nent)?/.*|react-navigation*|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|@react-native-firebase/app)'
+    'node_modules/(?!(jest-)?@?react-native|react-native*|react-redux|loreact-clone-referenced-element|@react-native-community|expo(nent)?|@expo(nent)?/.*|react-navigation*|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|@react-native-firebase/app)'
   ],
   moduleNameMapper: {
     '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
